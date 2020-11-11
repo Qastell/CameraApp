@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		3F64200A255BC4F700C85227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F642009255BC4F700C85227 /* AppDelegate.swift */; };
 		3F64200C255BC4F700C85227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64200B255BC4F700C85227 /* SceneDelegate.swift */; };
-		3F64200E255BC4F700C85227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64200D255BC4F700C85227 /* ViewController.swift */; };
 		3F642011255BC4F700C85227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F64200F255BC4F700C85227 /* Main.storyboard */; };
 		3F642013255BC4FE00C85227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F642012255BC4FE00C85227 /* Assets.xcassets */; };
 		3F642016255BC4FE00C85227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F642014255BC4FE00C85227 /* LaunchScreen.storyboard */; };
 		3F642021255BC4FE00C85227 /* CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F642020255BC4FE00C85227 /* CameraAppTests.swift */; };
 		3F64202C255BC4FE00C85227 /* CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64202B255BC4FE00C85227 /* CameraAppUITests.swift */; };
+		3F64203D255BC96900C85227 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64203C255BC96900C85227 /* PhotoViewController.swift */; };
+		3F642054255BCA6600C85227 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F642053255BCA6600C85227 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		3F642006255BC4F700C85227 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F642009255BC4F700C85227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F64200B255BC4F700C85227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F64200D255BC4F700C85227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F642010255BC4F700C85227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F642012255BC4FE00C85227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F642015255BC4FE00C85227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		3F642027255BC4FE00C85227 /* CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F64202B255BC4FE00C85227 /* CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppUITests.swift; sourceTree = "<group>"; };
 		3F64202D255BC4FE00C85227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F64203C255BC96900C85227 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		3F642053255BCA6600C85227 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 			children = (
 				3F642009255BC4F700C85227 /* AppDelegate.swift */,
 				3F64200B255BC4F700C85227 /* SceneDelegate.swift */,
-				3F64200D255BC4F700C85227 /* ViewController.swift */,
+				3F642044255BC98400C85227 /* ViewControllers */,
 				3F64200F255BC4F700C85227 /* Main.storyboard */,
 				3F642012255BC4FE00C85227 /* Assets.xcassets */,
 				3F642014255BC4FE00C85227 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				3F64202D255BC4FE00C85227 /* Info.plist */,
 			);
 			path = CameraAppUITests;
+			sourceTree = "<group>";
+		};
+		3F642044255BC98400C85227 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F64203C255BC96900C85227 /* PhotoViewController.swift */,
+				3F642053255BCA6600C85227 /* StartViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F64200E255BC4F700C85227 /* ViewController.swift in Sources */,
+				3F64203D255BC96900C85227 /* PhotoViewController.swift in Sources */,
+				3F642054255BCA6600C85227 /* StartViewController.swift in Sources */,
 				3F64200A255BC4F700C85227 /* AppDelegate.swift in Sources */,
 				3F64200C255BC4F700C85227 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM3NBJ97S4;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM3NBJ97S4;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
